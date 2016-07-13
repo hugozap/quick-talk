@@ -3,7 +3,7 @@ The simplest Web presentation tool. Just copy the html , add your content, save 
 
 # Why?
 
-If you just want to add your content to an html file, and not depend on tools, 3rd party services or even an internet connection this can be useful.
+Sometimes you just need a simple way to add your content and present it. Without tools, or internet connection. Just save the html to your disk, change the styles if you like.
 
 # Demo
 [http://hugozap.neocities.org/experiments/slides.html](http://hugozap.neocities.org/experiments/slides.html)
