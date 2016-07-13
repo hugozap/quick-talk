@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slides demo</title>
+	<style>
+		html, body {
+			width: 100%;
+			background-color: #263238;
+			color: #EC5F67;
+			font-size: 12px;
+		}
+
+		* {
+			color: #EC5F67;
+		}
+
+		.slide {
+			transition: all 1s;
+			font-size:3em;
+			text-align: center;
+		}
+
+		.slide a.next {
+			display:block;
+		}
+
+		.slide:not(:target) {
+			position: fixed;
+			/* Replace with custom animation for better transitions */
+			transform: translateX(-120%);
+		}
+
+		slide:target {
+			position: fixed;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+		}
+
+		.entry {
+			font-size: 30px;
+			display: block;
+			text-align: center;
+			line-height: 100%;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<a href="#1">Start</a>
+	<div id="1" class="slide">
+		<h1>Quick (and clean) presentation tool</h1>
+		<p>With only CSS and the :target pseudo selector you
+		can display the active element and hide the others. </p>
+		<img src="http://lorempixel.com/g/400/200/sports/1" alt="">
+		<a href="#2" class="next">Next</a>
+	</div>
+	<div id="2" class="slide">
+		<h1>Second slide</h1>
+		<img src="http://lorempixel.com/g/400/200/sports/2" alt="">
+		<p>This is the second slide. Cool No JS was needed. Just copy
+		the source and modify it to create your presentation</p>
+		<a href="#3" class="next">Next</a>
+	</div>
+	<div id="3" class="slide">
+		<h1> Third slide</h1>
+		<p>We only need to set the id's of each slide element and
+		use hyperlinks with href="#mySlideId" for the next or previous buttons</p>
+		<p>In CSS just use :not(:target) or :target to hide/show the elements</p>
+
+	</div>
+</body>
+</html>
